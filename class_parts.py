@@ -449,7 +449,7 @@ class Piece:
         else:    
             for i in range(1,n+1):
                 k = 0
-                sleep(1)
+                sleep(0.5)
                 self.undraw()
                 if 101<=self.track<=120 or\
                    (self.track == 11 and self.color == 'yellow') or\
@@ -500,7 +500,7 @@ class Piece:
 
                 if k != n-1:
                     for i in range(1,n-k):
-                        sleep(1)
+                        sleep(0.5)
                         self.undraw()
                         self.x = Pos(self.track-1,self.win).x
                         self.y = Pos(self.track-1,self.win).y
